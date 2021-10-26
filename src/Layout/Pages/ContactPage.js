@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import CategoryItem from "../Component/Block/CategoryItem";
 
 import "./Style/ContactPage.scss";
 
@@ -30,6 +31,9 @@ export default function ContactPage() {
                             <p className="p-1">{item.p1}</p>
                             <p className="p-2">{item.p2}</p>
                         </div>)}
+                    </div>
+                    <div className="col-lg-3 col-12">
+                        <CategoryItem />
                     </div>
                 </div>
             </div>
