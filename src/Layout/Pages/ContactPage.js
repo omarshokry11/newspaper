@@ -23,7 +23,7 @@ export default function ContactPage() {
         <div className="main-home-page-container">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-9 col-12">
+                    <div className="col-lg-8 col-12">
                         {contactItem.map((item) => <div className="contact-item" key={item.id}>
                             <Link to="/">{item.linkName}</Link>
                             <span>/ {item.span}</span>
@@ -32,7 +32,7 @@ export default function ContactPage() {
                             <p className="p-2">{item.p2}</p>
                         </div>)}
                     </div>
-                    <div className="col-lg-3 col-12">
+                    <div className="col-lg-4 col-12">
                         <CategoryItem />
                     </div>
                 </div>
