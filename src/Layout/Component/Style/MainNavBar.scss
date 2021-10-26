@@ -1,0 +1,52 @@
+@import "../../../Style/__variable.scss";
+
+.main-nav-bar-container
+{
+    img{
+        padding: 30px 0;
+        width: 200px;
+    }
+    .item-nav-link
+    {
+        padding: 20px;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        @media (max-width: 700px) {
+            border: none;
+            width: 100%;
+        }
+        a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #939393;
+            font-size: 15px;
+            font-weight: 300;
+            &:hover{
+                border-top: 2px solid #000;
+            }
+            @media (max-width: 700px) {
+                display: block;
+                width: 100%;
+                padding: 8px 15px;
+                font-size: 16px;
+            }
+        }
+        .active{
+            border-top: 2px solid #000;
+        }
+    }
+    .dropdown-list
+    {
+        padding: 5px;
+        width: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+        border: 1px solid #e1e1e1;
+        div{
+            margin: 5px 0;
+            width: 100%;
+            height: 3px;
+            background-color: $mainColor;
+        }
+    }
+}

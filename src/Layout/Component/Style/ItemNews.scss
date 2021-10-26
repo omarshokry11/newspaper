@@ -1,0 +1,38 @@
+@import "../../../Style/__variable.scss";
+
+.main-item-news-container
+{
+    padding-top: 25px;
+    .item{
+        margin: 20px 0;
+        .item-details
+        {
+            margin-top: 25px;
+            h2{
+                font-size: 24px;
+                cursor: pointer;
+                transition: all .5s;
+                margin-bottom: 15px;
+                &:hover{
+                    color: #0f5fa3;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 320px) {
+                    font-size: 15px;
+                }
+            }
+            .history{
+                color: #bfbfbf;
+            }
+            p{
+                margin: 10px 0;
+                color: #8c9597;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+    }
+}

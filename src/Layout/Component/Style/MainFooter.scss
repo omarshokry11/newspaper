@@ -1,0 +1,62 @@
+@import "../../../Style/__variable.scss";
+
+.main-footer-container{
+    background-color: #001228;
+    color: $thirdColor;
+    padding: 25px 0;
+    .item{
+        margin-bottom: 25px;
+    }
+    h2{
+        font-size: 25px;
+        @media (max-width: 700px) {
+            font-size: 25px;
+        }
+        @media (max-width: 320px) {
+            font-size: 20px;
+        }
+    }
+    p{
+        color: #a9afb5;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    a{
+        color: #a9afb5;
+        transition: all .5s;
+        &:hover{
+            color: $mainColor;
+            text-decoration: none;
+        }
+    }
+    span{
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #455263;
+        display: block;
+    }
+    .category{
+        a{
+            display: inline-block;
+            width: 80%;
+        }
+        span{
+            margin: 0 auto;
+            display: inline-block;
+        }
+    }
+    .contact
+    {
+        strong{
+            margin-right: 10px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        span{
+            display: inline-block;
+            color: #a9afb5;
+            font-size: 15px;
+        }
+    }
+}

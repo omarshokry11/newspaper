@@ -1,0 +1,110 @@
+@import "../../../Style/__variable.scss";
+
+.main-top-bar-container
+{
+    background-color: #04132d;
+    color: $thirdColor;
+    .item
+    {
+        display: flex;
+        justify-content: space-between;
+        .icon
+        {
+            flex: .28;
+            background-color: $mainColor;
+            padding: 10px 0;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            i{
+                padding: 5px;
+                font-size: 13px;
+                background-color: #04132d;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
+        .link
+        {
+            padding: 10px 0;
+            flex: .7;
+            a{
+                text-decoration: none;
+                color: $thirdColor;
+                font-size: 14px;
+                transition: all .5s;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .form
+    {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            display: block;
+            padding: 10px;
+        }
+        .input
+        {
+            flex: .4;
+            border: 1px solid #202d44;
+            padding: 5px 0;
+            @media (max-width: 768px) {
+                flex: 1;
+            }
+            input{
+                background-color: #04132d;
+                color: $thirdColor;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 5px;
+                width: 85%;
+                &::placeholder{
+                    color: $thirdColor;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            i{
+                width: 15%;
+                text-align: center;
+            }
+        }
+        .social
+        {
+            list-style: none;
+            flex: .6;
+            padding: 0;
+            margin-bottom: 0;
+            margin-left: 25px;
+            @media (max-width: 768px) {
+                flex: 1;
+                padding-top: 10px;
+                text-align: center;
+            }
+            li
+            {
+                padding: 0;
+                display: inline-block;
+                margin: 10px 10px 0;
+                a
+                {
+                    text-decoration: none;
+                    color: $thirdColor;
+                    transition: all .5s;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                    i{
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../../Style/__variable.scss";
+
+.main-home-page-container
+{
+    .contact-item
+    {
+        color: $secondColor;
+        a{
+            color: $secondColor;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        span{
+            margin-left: 5px;
+            font-size: 13px;
+        }
+        h1{
+            margin: 15px 0 25px;
+            font-size: 33px;
+            line-height: 37px;
+            @media (max-width: 700px) {
+                font-size: 20px;
+            }
+            @media (max-width: 320px) {
+                font-size: 15px;
+            }
+        }
+        p{
+            font-size: 15px;
+            @media (max-width: 320px) {
+                font-size: 10px;
+            }
+        }
+        .p-1{
+            border-bottom: 1px dotted #bababa;
+            padding-bottom: 20px;
+        }
+        .p-2{
+            color: #8c9597;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import "../../../Style/__variable.scss";
+
+.main-home-page-container
+{
+    .main-cover-home-page-container
+    {
+        background-color: #000000;
+        @media (max-width: 700px) {
+            margin-top: 20px;
+        }
+        .items
+        {
+            display: flex;
+            @media (max-width: 768px) {
+                display: block;
+            }
+            .item-1{
+                flex: .7;
+                @media (max-width: 768px) {
+                    flex: 1;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .item-2{
+                flex: .3;
+                @media (max-width: 768px) {
+                    flex: 1;
+                }
+                img{
+                    display: block;
+                    width: 370px;
+                    @media (max-width: 1024px) {
+                        width: 309px;
+                    }
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+            }
+            .item
+            {
+                position: relative;
+                color: $thirdColor;
+                .img
+                {
+                    position: relative;
+                    .background-color{
+                        position: absolute;
+                        background-color: rgba(0, 0, 0, 0.3);
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1;
+                        transition: all .4s;
+                    }
+                }
+                .img-1{
+                    &:hover .background-color{
+                        background-color: rgba(0, 0, 0, 0.0);
+                    }
+                }
+                .img-2{
+                    &:hover .background-color{
+                        background-color: rgba(0, 0, 0, 0.0);
+                    }
+                }
+                .img-3{
+                    &:hover .background-color{
+                        background-color: rgba(0, 0, 0, 0.0);
+                    }
+                }
+            }
+        }
+    }
+    .img-item
+    {
+        width: 60%;
+        margin: 25px auto;
+        display: flex;
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            display: block;
+            width: 90%;
+        }
+        div{
+            flex: .25;
+            @media (max-width: 700px) {
+               flex: 1;
+            }
+        }
+        .item-img
+        {
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 100%;
+                transition: all .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .main-the-world-container{
+        padding-top: 100px;
+    }
+}

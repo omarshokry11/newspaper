@@ -1,0 +1,41 @@
+@import "../../../../Style/__variable.scss";
+
+.items
+{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    .img{
+        flex: .3;
+        img{
+            width: 100%;
+        }
+    }
+    .item-details
+    {
+        flex: .65;
+        h3{
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            color: $mainColor;
+            transition: all .5s;
+            @media (max-width: 320px) {
+                font-size: 12px;
+            }
+            @media (max-width: 280px) {
+                font-size: 10px;
+            }
+            &:hover{
+                color: #0f5fa3;
+            }
+        }
+    }
+}
+.item-dotted{
+    border-bottom: 1px dotted #d7d7d7;
+    @media (max-width: 768px) {
+        border: none;
+    }
+}
